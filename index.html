@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stefan Kar M. Chan - Web Developer & Software Engineer specializing in scalable systems and elegant solutions">
+    <title>Stefan Kar M. Chan | Web Developer & Software Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg" aria-hidden="true">
+        <div class="ambient-gradient"></div>
+        <div class="code-rain" id="codeRain"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-content">
+            <a href="#hero" class="nav-logo">SKC</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="image/profile.jpg" 
+                     alt="Stefan Kar M. Chan"
+                     class="profile-image"
+                     loading="eager">
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-name">Stefan Kar M. Chan</span>
+            </h1>
+            <p class="hero-subtitle">Web Developer <span class="divider">|</span> Software Engineer</p>
+            <p class="hero-tagline">
+                <span class="typing-text" id="typingText"></span>
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    I'm a 4th-year Information Technology student based in Cebu City, Philippines, passionate about building scalable web applications and innovative software solutions. I specialize in modern web technologies, including HTML, CSS, JavaScript, PHP, and frameworks like React and TailwindCSS.
+                </p>
+                <p class="about-text">
+                    I'm a software engineer who believes that great code is invisible to users but invaluable to teams. My work focuses on building systems that scale gracefully, interfaces that feel intuitive, and architectures that stand the test of time.
+                </p>
+                <p class="about-text">
+                    With expertise spanning modern web technologies and backend systems, I approach every project as an opportunity to solve real problems with elegant solutions. I value craftsmanship, clarity in communication, and the continuous pursuit of excellence.
+                </p>
+                <p class="about-text">
+                    Currently, I am honing my skills in full-stack development, cloud deployment, and AI-assisted solutions. I aim to leverage my academic knowledge and hands-on experience to contribute to meaningful IT projects and solve real-world challenges.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item" data-level="95">
+                            <span class="skill-name">HTML & CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="90">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="75">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="85">
+                            <span class="skill-name">TailwindCSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Backend</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item" data-level="85">
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="80">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="70">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools & Practices</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item" data-level="90">
+                            <span class="skill-name">Git & Version Control</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="85">
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item" data-level="80">
+                            <span class="skill-name">API Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Flowise AI Portfolio Assistant</h3>
+                        <p class="project-description">An intelligent conversational interface leveraging AI to provide dynamic portfolio interactions and information retrieval.</p>
+                        <div class="project-meta">
+                            <span class="project-challenge">Challenge:</span>
+                            <p>Create an intuitive AI-powered assistant that understands context and delivers personalized portfolio navigation.</p>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-solution">Solution:</span>
+                            <p>Integrated natural language processing with custom-trained models to provide seamless user experience.</p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>JavaScript</li>
+                            <li>AI Integration</li>
+                            <li>NLP</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">MaBote.ph Mobile App</h3>
+                        <p class="project-description">A location-based service platform connecting users with local businesses through an intuitive mobile experience.</p>
+                        <div class="project-meta">
+                            <span class="project-challenge">Challenge:</span>
+                            <p>Design a performant mobile interface handling real-time geolocation and dynamic content updates.</p>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-solution">Solution:</span>
+                            <p>Implemented progressive web app architecture with offline capabilities and optimized map rendering.</p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>React</li>
+                            <li>Geolocation API</li>
+                            <li>PWA</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">GreenMeadowsPortal</h3>
+                        <p class="project-description">An enterprise resource management system streamlining operations for residential community administration.</p>
+                        <div class="project-meta">
+                            <span class="project-challenge">Challenge:</span>
+                            <p>Build a secure, scalable portal managing complex workflows across multiple user roles and permissions.</p>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-solution">Solution:</span>
+                            <p>Architected role-based access control system with real-time notifications and comprehensive audit trails.</p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>PHP</li>
+                            <li>MySQL</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">SkillBuilder PH</h3>
+                        <p class="project-description">An educational platform empowering Filipino professionals with accessible skill development resources.</p>
+                        <div class="project-meta">
+                            <span class="project-challenge">Challenge:</span>
+                            <p>Create an engaging learning environment that adapts to varying internet connectivity conditions.</p>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-solution">Solution:</span>
+                            <p>Developed adaptive content delivery system with progressive enhancement and offline-first architecture.</p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Project Alpha – E-Commerce API</h3>
+                        <p class="project-description">A robust RESTful API powering seamless e-commerce operations with emphasis on security and performance.</p>
+                        <div class="project-meta">
+                            <span class="project-challenge">Challenge:</span>
+                            <p>Design an API handling high-volume transactions while maintaining data integrity and sub-second response times.</p>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-solution">Solution:</span>
+                            <p>Implemented caching strategies, database optimization, and comprehensive validation layers.</p>
+                        </div>
+                        <ul class="project-tech">
+                            <li>Node.js</li>
+                            <li>MySQL</li>
+                            <li>REST API</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <p class="contact-intro">I'm always interested in discussing new opportunities, challenging projects, or just connecting with fellow engineers. Let's build something exceptional together.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:stefanchan32@gmail.com" class="contact-link">stefanchan32@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Location</span>
+                        <span class="contact-value">Cebu City, Philippines</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">+639912084482</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2024 Stefan Kar M. Chan.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/gh/Meresight/FlowiseChatEmbed@latest/dist/web.js"
+        Chatbot.init({
+            chatflowid: "898c8795-8c4d-4f00-8b71-b2653b010b1c",
+            apiHost: "https://cloud.flowiseai.com",
+        })
+    </script>
+</body>
+</html>
+   
